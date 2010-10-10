@@ -42,18 +42,36 @@ public class Main {
 				.procedure_definition();
 		CommonTree arbol = (CommonTree) procedimiento.getTree();
 
+		arbol.toStringTree();
+
 		List list = arbol.getChildren();
 
 		for (Object object : list) {
 			System.out.print(object);
 		}
+		Tree arbol2 = (Tree) arbol;
+		System.out.println("\ntree=" + ((Tree) arbol).toStringTree());
+		
+		printTree(arbol, 1);
 
-		System.out.println("tree=" + ((Tree) arbol).toStringTree());
+		// System.out.println(parser.ex);
 
-		CommonTreeNodeStream nodes = new CommonTreeNodeStream((Tree) arbol);
-		nodes.setTokenStream(tokens);
+		// CommonTreeNodeStream nodes = new CommonTreeNodeStream((Tree) arbol);
+		// nodes.setTokenStream(tokens);
+		//
+		// System.out.println(nodes);
+	}
 
-		System.out.println(nodes);
+	public static void printTree(CommonTree t, int indent) {
+		if (t != null) {
+			StringBuffer sb = new StringBuffer(indent);
+			for (int i = 0; i < indent; i++)
+				sb = sb.append("   ");
+			for (int i = 0; i < t.getChildCount(); i++) {
+				System.out.println(sb.toString() + t.getChild(i).toString());
+				printTree((CommonTree) t.getChild(i), indent + 1);
+			}
+		}
 	}
 
 }

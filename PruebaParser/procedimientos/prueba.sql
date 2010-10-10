@@ -9,7 +9,8 @@ is
       where course_name = name_in;
 
 begin
-
+hola(hola,mane);
+	
 open c1;
 fetch c1 into cnumber;
 

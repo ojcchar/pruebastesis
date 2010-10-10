@@ -23,6 +23,10 @@ options {
   output=AST;
 }
 
+tokens {
+    PROC_CALL;    
+}
+
 @header {
 package org.plsql;
 }

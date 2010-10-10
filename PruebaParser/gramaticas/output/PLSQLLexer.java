@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g 2010-10-09 23:16:30
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g 2010-10-10 00:38:27
 
 package org.plsql;
 
@@ -9,136 +9,137 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class PLSQLLexer extends Lexer {
-    public static final int FUNCTION=8;
-    public static final int PACKAGE=115;
-    public static final int EXTERNAL=117;
-    public static final int EXPONENT=99;
-    public static final int WHILE=87;
-    public static final int DETERMINISTIC=36;
-    public static final int VARYING=26;
-    public static final int CASE=50;
-    public static final int DOUBLEDOT=66;
-    public static final int NOT=20;
-    public static final int SUBTYPE=24;
+    public static final int FUNCTION=9;
+    public static final int PACKAGE=116;
+    public static final int EXTERNAL=118;
+    public static final int EXPONENT=100;
+    public static final int WHILE=88;
+    public static final int DETERMINISTIC=37;
+    public static final int VARYING=27;
+    public static final int CASE=51;
+    public static final int DOUBLEDOT=67;
+    public static final int NOT=21;
+    public static final int SUBTYPE=25;
     public static final int EOF=-1;
-    public static final int SQL=100;
-    public static final int RPAREN=12;
-    public static final int CREATE=114;
-    public static final int INSERT=79;
-    public static final int USING=62;
-    public static final int RETURNING=63;
-    public static final int LOOP=49;
-    public static final int BEGIN=41;
-    public static final int SAVEPOINT=82;
-    public static final int RETURN=9;
-    public static final int RAISE=74;
-    public static final int BODY=116;
-    public static final int GEQ=93;
-    public static final int EQ=88;
-    public static final int GOTO=69;
-    public static final int SELECT=83;
-    public static final int INTO=59;
-    public static final int ISOPEN=102;
-    public static final int ARRAY=27;
-    public static final int DIVIDE=4;
-    public static final int EXCEPTION=23;
-    public static final int EXIT=56;
-    public static final int RBRACK=125;
-    public static final int RECORD=25;
-    public static final int N=128;
-    public static final int TRANSACTION=85;
-    public static final int NULL=21;
-    public static final int ELSE=51;
-    public static final int AT_SIGN=124;
-    public static final int DEFINER=120;
-    public static final int DELETE=48;
-    public static final int DOUBLEVERTBAR=97;
-    public static final int ROLLBACK=81;
-    public static final int AUTHID=118;
-    public static final int NOCOPY=15;
-    public static final int WS=130;
-    public static final int LANGUAGE=121;
-    public static final int FETCH=57;
-    public static final int OUT=14;
-    public static final int REAL_NUMBER=105;
-    public static final int PIPELINED=37;
-    public static final int SL_COMMENT=131;
-    public static final int OR=44;
-    public static final int CONSTANT=22;
-    public static final int ELSIF=71;
-    public static final int END=42;
-    public static final int FALSE=107;
-    public static final int COLLECT=61;
-    public static final int CURSOR=18;
-    public static final int OTHERS=45;
-    public static final int LBRACK=126;
-    public static final int POINT=123;
-    public static final int CURRENT_USER=119;
-    public static final int LIMIT=58;
-    public static final int EXECUTE=54;
-    public static final int INSERTING=110;
-    public static final int GTH=92;
-    public static final int NOTFOUND=103;
-    public static final int PRAGMA=73;
-    public static final int RESULT_CACHE=39;
-    public static final int TABLE=29;
-    public static final int LLABEL=76;
-    public static final int UPDATE=86;
-    public static final int FOR=64;
-    public static final int ID=7;
-    public static final int AND=68;
-    public static final int ASTERISK=98;
-    public static final int LPAREN=10;
-    public static final int LOCK=80;
-    public static final int UPDATING=111;
-    public static final int IF=70;
-    public static final int RLABEL=77;
-    public static final int ML_COMMENT=132;
-    public static final int AS=40;
-    public static final int INDEX=30;
-    public static final int ROWTYPE=35;
-    public static final int THEN=46;
-    public static final int IN=13;
-    public static final int CONTINUE=53;
-    public static final int COMMA=11;
-    public static final int IS=19;
-    public static final int PLUS=96;
-    public static final int QUOTED_STRING=108;
-    public static final int EXISTS=109;
-    public static final int DOT=33;
-    public static final int LIKE=94;
-    public static final int INTEGER=104;
-    public static final int VARRAY=28;
-    public static final int BY=31;
-    public static final int PERCENT=34;
-    public static final int PARALLEL_ENABLE=38;
-    public static final int DOUBLEQUOTED_STRING=122;
-    public static final int DEFAULT=17;
-    public static final int FORALL=65;
-    public static final int SET=84;
-    public static final int MINUS=95;
-    public static final int SEMI=5;
-    public static final int TRUE=106;
-    public static final int PROCEDURE=6;
-    public static final int NOT_EQ=89;
-    public static final int REF=32;
-    public static final int VERTBAR=127;
-    public static final int LTH=90;
-    public static final int OPEN=72;
-    public static final int COLON=47;
-    public static final int COMMIT=78;
-    public static final int BULK_ROWCOUNT=101;
-    public static final int CLOSE=52;
-    public static final int WHEN=43;
-    public static final int ASSIGN=16;
-    public static final int IMMEDIATE=55;
-    public static final int NUMBER_VALUE=129;
-    public static final int DECLARE=75;
-    public static final int ARROW=113;
-    public static final int DELETING=112;
-    public static final int BULK=60;
-    public static final int BETWEEN=67;
-    public static final int LEQ=91;
+    public static final int SQL=101;
+    public static final int RPAREN=13;
+    public static final int CREATE=115;
+    public static final int INSERT=80;
+    public static final int USING=63;
+    public static final int RETURNING=64;
+    public static final int LOOP=50;
+    public static final int BEGIN=42;
+    public static final int SAVEPOINT=83;
+    public static final int RETURN=10;
+    public static final int RAISE=75;
+    public static final int BODY=117;
+    public static final int GEQ=94;
+    public static final int EQ=89;
+    public static final int GOTO=70;
+    public static final int SELECT=84;
+    public static final int INTO=60;
+    public static final int ISOPEN=103;
+    public static final int ARRAY=28;
+    public static final int DIVIDE=5;
+    public static final int EXCEPTION=24;
+    public static final int EXIT=57;
+    public static final int RBRACK=126;
+    public static final int RECORD=26;
+    public static final int N=129;
+    public static final int TRANSACTION=86;
+    public static final int NULL=22;
+    public static final int ELSE=52;
+    public static final int AT_SIGN=125;
+    public static final int DEFINER=121;
+    public static final int DELETE=49;
+    public static final int DOUBLEVERTBAR=98;
+    public static final int ROLLBACK=82;
+    public static final int AUTHID=119;
+    public static final int NOCOPY=16;
+    public static final int WS=131;
+    public static final int LANGUAGE=122;
+    public static final int FETCH=58;
+    public static final int OUT=15;
+    public static final int REAL_NUMBER=106;
+    public static final int PIPELINED=38;
+    public static final int SL_COMMENT=132;
+    public static final int OR=45;
+    public static final int CONSTANT=23;
+    public static final int ELSIF=72;
+    public static final int END=43;
+    public static final int FALSE=108;
+    public static final int COLLECT=62;
+    public static final int CURSOR=19;
+    public static final int OTHERS=46;
+    public static final int LBRACK=127;
+    public static final int PROC_CALL=4;
+    public static final int POINT=124;
+    public static final int CURRENT_USER=120;
+    public static final int LIMIT=59;
+    public static final int EXECUTE=55;
+    public static final int INSERTING=111;
+    public static final int GTH=93;
+    public static final int NOTFOUND=104;
+    public static final int PRAGMA=74;
+    public static final int RESULT_CACHE=40;
+    public static final int TABLE=30;
+    public static final int LLABEL=77;
+    public static final int UPDATE=87;
+    public static final int FOR=65;
+    public static final int ID=8;
+    public static final int AND=69;
+    public static final int ASTERISK=99;
+    public static final int LPAREN=11;
+    public static final int LOCK=81;
+    public static final int UPDATING=112;
+    public static final int IF=71;
+    public static final int RLABEL=78;
+    public static final int ML_COMMENT=133;
+    public static final int AS=41;
+    public static final int INDEX=31;
+    public static final int ROWTYPE=36;
+    public static final int THEN=47;
+    public static final int IN=14;
+    public static final int CONTINUE=54;
+    public static final int COMMA=12;
+    public static final int IS=20;
+    public static final int PLUS=97;
+    public static final int QUOTED_STRING=109;
+    public static final int EXISTS=110;
+    public static final int DOT=34;
+    public static final int LIKE=95;
+    public static final int INTEGER=105;
+    public static final int VARRAY=29;
+    public static final int BY=32;
+    public static final int PERCENT=35;
+    public static final int PARALLEL_ENABLE=39;
+    public static final int DOUBLEQUOTED_STRING=123;
+    public static final int DEFAULT=18;
+    public static final int FORALL=66;
+    public static final int SET=85;
+    public static final int MINUS=96;
+    public static final int SEMI=6;
+    public static final int TRUE=107;
+    public static final int PROCEDURE=7;
+    public static final int NOT_EQ=90;
+    public static final int REF=33;
+    public static final int VERTBAR=128;
+    public static final int LTH=91;
+    public static final int OPEN=73;
+    public static final int COLON=48;
+    public static final int COMMIT=79;
+    public static final int BULK_ROWCOUNT=102;
+    public static final int CLOSE=53;
+    public static final int WHEN=44;
+    public static final int ASSIGN=17;
+    public static final int IMMEDIATE=56;
+    public static final int NUMBER_VALUE=130;
+    public static final int DECLARE=76;
+    public static final int ARROW=114;
+    public static final int DELETING=113;
+    public static final int BULK=61;
+    public static final int BETWEEN=68;
+    public static final int LEQ=92;
 
     public String getErrorHeader(RecognitionException e) {
         return getSourceName()+":"+e.line+":"+(e.charPositionInLine+1)+":";
@@ -172,8 +173,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:623:5: ( 'and' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:623:7: 'and'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:627:5: ( 'and' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:627:7: 'and'
             {
             match("and"); 
 
@@ -193,8 +194,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ARRAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:624:7: ( 'array' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:624:9: 'array'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:628:7: ( 'array' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:628:9: 'array'
             {
             match("array"); 
 
@@ -214,8 +215,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = AS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:625:4: ( 'as' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:625:6: 'as'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:629:4: ( 'as' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:629:6: 'as'
             {
             match("as"); 
 
@@ -235,8 +236,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = AUTHID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:626:7: ( 'authid' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:626:9: 'authid'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:630:7: ( 'authid' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:630:9: 'authid'
             {
             match("authid"); 
 
@@ -256,8 +257,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BETWEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:627:9: ( 'between' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:627:11: 'between'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:631:9: ( 'between' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:631:11: 'between'
             {
             match("between"); 
 
@@ -277,8 +278,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BODY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:628:6: ( 'body' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:628:8: 'body'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:632:6: ( 'body' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:632:8: 'body'
             {
             match("body"); 
 
@@ -298,8 +299,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BULK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:629:5: ( 'bulk' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:629:7: 'bulk'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:633:5: ( 'bulk' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:633:7: 'bulk'
             {
             match("bulk"); 
 
@@ -319,8 +320,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BULK_ROWCOUNT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:630:14: ( 'bulk_rowcount' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:630:16: 'bulk_rowcount'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:634:14: ( 'bulk_rowcount' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:634:16: 'bulk_rowcount'
             {
             match("bulk_rowcount"); 
 
@@ -340,8 +341,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:631:4: ( 'by' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:631:6: 'by'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:635:4: ( 'by' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:635:6: 'by'
             {
             match("by"); 
 
@@ -361,8 +362,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CASE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:632:5: ( 'case' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:632:7: 'case'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:636:5: ( 'case' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:636:7: 'case'
             {
             match("case"); 
 
@@ -382,8 +383,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CREATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:633:7: ( 'create' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:633:9: 'create'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:637:7: ( 'create' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:637:9: 'create'
             {
             match("create"); 
 
@@ -403,8 +404,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = COLLECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:634:8: ( 'collect' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:634:10: 'collect'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:638:8: ( 'collect' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:638:10: 'collect'
             {
             match("collect"); 
 
@@ -424,8 +425,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = COMMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:635:8: ( 'commit' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:635:10: 'commit'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:639:8: ( 'commit' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:639:10: 'commit'
             {
             match("commit"); 
 
@@ -445,8 +446,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CURRENT_USER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:636:13: ( 'current_user' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:636:15: 'current_user'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:640:13: ( 'current_user' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:640:15: 'current_user'
             {
             match("current_user"); 
 
@@ -466,8 +467,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DEFAULT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:637:9: ( 'default' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:637:11: 'default'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:641:9: ( 'default' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:641:11: 'default'
             {
             match("default"); 
 
@@ -487,8 +488,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DEFINER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:638:8: ( 'definer' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:638:10: 'definer'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:642:8: ( 'definer' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:642:10: 'definer'
             {
             match("definer"); 
 
@@ -508,8 +509,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DELETE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:639:8: ( 'delete' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:639:10: 'delete'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:643:8: ( 'delete' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:643:10: 'delete'
             {
             match("delete"); 
 
@@ -529,8 +530,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:640:6: ( 'else' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:640:8: 'else'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:644:6: ( 'else' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:644:8: 'else'
             {
             match("else"); 
 
@@ -550,8 +551,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ELSIF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:641:7: ( 'elsif' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:641:9: 'elsif'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:645:7: ( 'elsif' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:645:9: 'elsif'
             {
             match("elsif"); 
 
@@ -571,8 +572,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXTERNAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:642:9: ( 'external' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:642:11: 'external'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:646:9: ( 'external' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:646:11: 'external'
             {
             match("external"); 
 
@@ -592,8 +593,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:643:7: ( 'false' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:643:9: 'false'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:647:7: ( 'false' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:647:9: 'false'
             {
             match("false"); 
 
@@ -613,8 +614,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = FETCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:644:7: ( 'fetch' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:644:9: 'fetch'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:648:7: ( 'fetch' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:648:9: 'fetch'
             {
             match("fetch"); 
 
@@ -634,8 +635,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:645:5: ( 'for' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:645:7: 'for'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:649:5: ( 'for' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:649:7: 'for'
             {
             match("for"); 
 
@@ -655,8 +656,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = FORALL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:646:8: ( 'forall' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:646:10: 'forall'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:650:8: ( 'forall' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:650:10: 'forall'
             {
             match("forall"); 
 
@@ -676,8 +677,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = GOTO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:647:6: ( 'goto' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:647:8: 'goto'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:651:6: ( 'goto' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:651:8: 'goto'
             {
             match("goto"); 
 
@@ -697,8 +698,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:648:4: ( 'if' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:648:6: 'if'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:652:4: ( 'if' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:652:6: 'if'
             {
             match("if"); 
 
@@ -718,8 +719,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = IN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:649:4: ( 'in' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:649:6: 'in'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:653:4: ( 'in' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:653:6: 'in'
             {
             match("in"); 
 
@@ -739,8 +740,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = INDEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:650:7: ( 'index' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:650:9: 'index'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:654:7: ( 'index' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:654:9: 'index'
             {
             match("index"); 
 
@@ -760,8 +761,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = INSERT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:651:8: ( 'insert' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:651:10: 'insert'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:655:8: ( 'insert' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:655:10: 'insert'
             {
             match("insert"); 
 
@@ -781,8 +782,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = INTO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:652:6: ( 'into' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:652:8: 'into'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:656:6: ( 'into' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:656:8: 'into'
             {
             match("into"); 
 
@@ -802,8 +803,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = IS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:653:4: ( 'is' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:653:6: 'is'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:657:4: ( 'is' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:657:6: 'is'
             {
             match("is"); 
 
@@ -823,8 +824,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LANGUAGE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:654:9: ( 'language' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:654:11: 'language'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:658:9: ( 'language' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:658:11: 'language'
             {
             match("language"); 
 
@@ -844,8 +845,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LIKE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:655:6: ( 'like' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:655:8: 'like'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:659:6: ( 'like' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:659:8: 'like'
             {
             match("like"); 
 
@@ -865,8 +866,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LIMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:656:7: ( 'limit' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:656:9: 'limit'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:660:7: ( 'limit' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:660:9: 'limit'
             {
             match("limit"); 
 
@@ -886,8 +887,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LOCK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:657:6: ( 'lock' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:657:8: 'lock'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:661:6: ( 'lock' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:661:8: 'lock'
             {
             match("lock"); 
 
@@ -907,8 +908,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:658:5: ( 'not' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:658:7: 'not'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:662:5: ( 'not' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:662:7: 'not'
             {
             match("not"); 
 
@@ -928,8 +929,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = NOTFOUND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:659:9: ( 'notfound' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:659:11: 'notfound'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:663:9: ( 'notfound' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:663:11: 'notfound'
             {
             match("notfound"); 
 
@@ -949,8 +950,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = NULL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:660:6: ( 'null' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:660:8: 'null'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:664:6: ( 'null' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:664:8: 'null'
             {
             match("null"); 
 
@@ -970,8 +971,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = OPEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:661:6: ( 'open' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:661:8: 'open'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:665:6: ( 'open' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:665:8: 'open'
             {
             match("open"); 
 
@@ -991,8 +992,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:662:4: ( 'or' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:662:6: 'or'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:666:4: ( 'or' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:666:6: 'or'
             {
             match("or"); 
 
@@ -1012,8 +1013,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PACKAGE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:663:8: ( 'package' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:663:10: 'package'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:667:8: ( 'package' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:667:10: 'package'
             {
             match("package"); 
 
@@ -1033,8 +1034,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RAISE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:664:7: ( 'raise' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:664:9: 'raise'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:668:7: ( 'raise' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:668:9: 'raise'
             {
             match("raise"); 
 
@@ -1054,8 +1055,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ROLLBACK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:665:9: ( 'rollback' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:665:11: 'rollback'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:669:9: ( 'rollback' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:669:11: 'rollback'
             {
             match("rollback"); 
 
@@ -1075,8 +1076,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SAVEPOINT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:666:11: ( 'savepoint' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:666:13: 'savepoint'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:670:11: ( 'savepoint' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:670:13: 'savepoint'
             {
             match("savepoint"); 
 
@@ -1096,8 +1097,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SELECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:667:8: ( 'select' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:667:10: 'select'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:671:8: ( 'select' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:671:10: 'select'
             {
             match("select"); 
 
@@ -1117,8 +1118,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:668:5: ( 'set' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:668:7: 'set'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:672:5: ( 'set' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:672:7: 'set'
             {
             match("set"); 
 
@@ -1138,8 +1139,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SQL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:669:5: ( 'sql' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:669:7: 'sql'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:673:5: ( 'sql' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:673:7: 'sql'
             {
             match("sql"); 
 
@@ -1159,8 +1160,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = TABLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:670:7: ( 'table' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:670:9: 'table'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:674:7: ( 'table' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:674:9: 'table'
             {
             match("table"); 
 
@@ -1180,8 +1181,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = TRANSACTION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:671:13: ( 'transaction' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:671:15: 'transaction'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:675:13: ( 'transaction' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:675:15: 'transaction'
             {
             match("transaction"); 
 
@@ -1201,8 +1202,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:672:6: ( 'true' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:672:8: 'true'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:676:6: ( 'true' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:676:8: 'true'
             {
             match("true"); 
 
@@ -1222,8 +1223,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = THEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:673:6: ( 'then' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:673:8: 'then'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:677:6: ( 'then' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:677:8: 'then'
             {
             match("then"); 
 
@@ -1243,8 +1244,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = UPDATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:674:8: ( 'update' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:674:10: 'update'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:678:8: ( 'update' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:678:10: 'update'
             {
             match("update"); 
 
@@ -1264,8 +1265,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:675:7: ( 'while' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:675:9: 'while'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:679:7: ( 'while' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:679:9: 'while'
             {
             match("while"); 
 
@@ -1285,8 +1286,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = INSERTING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:677:2: ( 'inserting' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:677:4: 'inserting'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:681:2: ( 'inserting' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:681:4: 'inserting'
             {
             match("inserting"); 
 
@@ -1306,8 +1307,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = UPDATING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:678:9: ( 'updating' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:678:11: 'updating'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:682:9: ( 'updating' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:682:11: 'updating'
             {
             match("updating"); 
 
@@ -1327,8 +1328,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DELETING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:679:9: ( 'deleting' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:679:11: 'deleting'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:683:9: ( 'deleting' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:683:11: 'deleting'
             {
             match("deleting"); 
 
@@ -1348,8 +1349,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ISOPEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:680:8: ( 'isopen' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:680:10: 'isopen'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:684:8: ( 'isopen' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:684:10: 'isopen'
             {
             match("isopen"); 
 
@@ -1369,8 +1370,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXISTS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:681:8: ( 'exists' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:681:10: 'exists'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:685:8: ( 'exists' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:685:10: 'exists'
             {
             match("exists"); 
 
@@ -1390,8 +1391,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = BEGIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:683:7: ( 'begin' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:683:9: 'begin'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:687:7: ( 'begin' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:687:9: 'begin'
             {
             match("begin"); 
 
@@ -1411,8 +1412,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CLOSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:684:7: ( 'close' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:684:9: 'close'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:688:7: ( 'close' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:688:9: 'close'
             {
             match("close"); 
 
@@ -1432,8 +1433,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CONSTANT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:685:10: ( 'constant' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:685:12: 'constant'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:689:10: ( 'constant' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:689:12: 'constant'
             {
             match("constant"); 
 
@@ -1453,8 +1454,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CONTINUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:686:9: ( 'continue' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:686:11: 'continue'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:690:9: ( 'continue' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:690:11: 'continue'
             {
             match("continue"); 
 
@@ -1474,8 +1475,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = CURSOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:687:8: ( 'cursor' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:687:10: 'cursor'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:691:8: ( 'cursor' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:691:10: 'cursor'
             {
             match("cursor"); 
 
@@ -1495,8 +1496,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DECLARE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:688:9: ( 'declare' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:688:11: 'declare'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:692:9: ( 'declare' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:692:11: 'declare'
             {
             match("declare"); 
 
@@ -1516,8 +1517,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DETERMINISTIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:689:15: ( 'deterministic' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:689:17: 'deterministic'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:693:15: ( 'deterministic' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:693:17: 'deterministic'
             {
             match("deterministic"); 
 
@@ -1537,8 +1538,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = END;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:690:5: ( 'end' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:690:7: 'end'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:694:5: ( 'end' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:694:7: 'end'
             {
             match("end"); 
 
@@ -1558,8 +1559,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXCEPTION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:691:11: ( 'exception' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:691:13: 'exception'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:695:11: ( 'exception' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:695:13: 'exception'
             {
             match("exception"); 
 
@@ -1579,8 +1580,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXECUTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:692:9: ( 'execute' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:692:11: 'execute'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:696:9: ( 'execute' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:696:11: 'execute'
             {
             match("execute"); 
 
@@ -1600,8 +1601,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:693:6: ( 'exit' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:693:8: 'exit'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:697:6: ( 'exit' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:697:8: 'exit'
             {
             match("exit"); 
 
@@ -1621,8 +1622,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = FUNCTION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:694:10: ( 'function' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:694:12: 'function'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:698:10: ( 'function' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:698:12: 'function'
             {
             match("function"); 
 
@@ -1642,8 +1643,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = IMMEDIATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:695:11: ( 'immediate' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:695:13: 'immediate'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:699:11: ( 'immediate' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:699:13: 'immediate'
             {
             match("immediate"); 
 
@@ -1663,8 +1664,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LOOP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:696:6: ( 'loop' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:696:8: 'loop'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:700:6: ( 'loop' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:700:8: 'loop'
             {
             match("loop"); 
 
@@ -1684,8 +1685,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = NOCOPY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:697:8: ( 'nocopy' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:697:10: 'nocopy'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:701:8: ( 'nocopy' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:701:10: 'nocopy'
             {
             match("nocopy"); 
 
@@ -1705,8 +1706,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = OTHERS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:698:8: ( 'others' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:698:10: 'others'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:702:8: ( 'others' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:702:10: 'others'
             {
             match("others"); 
 
@@ -1726,8 +1727,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = OUT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:699:5: ( 'out' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:699:7: 'out'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:703:5: ( 'out' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:703:7: 'out'
             {
             match("out"); 
 
@@ -1747,8 +1748,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PARALLEL_ENABLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:700:17: ( 'parallel_enable' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:700:19: 'parallel_enable'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:704:17: ( 'parallel_enable' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:704:19: 'parallel_enable'
             {
             match("parallel_enable"); 
 
@@ -1768,8 +1769,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PIPELINED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:701:11: ( 'pipelined' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:701:13: 'pipelined'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:705:11: ( 'pipelined' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:705:13: 'pipelined'
             {
             match("pipelined"); 
 
@@ -1789,8 +1790,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PRAGMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:702:8: ( 'pragma' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:702:10: 'pragma'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:706:8: ( 'pragma' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:706:10: 'pragma'
             {
             match("pragma"); 
 
@@ -1810,8 +1811,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PROCEDURE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:703:11: ( 'procedure' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:703:13: 'procedure'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:707:11: ( 'procedure' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:707:13: 'procedure'
             {
             match("procedure"); 
 
@@ -1831,8 +1832,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RECORD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:704:8: ( 'record' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:704:10: 'record'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:708:8: ( 'record' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:708:10: 'record'
             {
             match("record"); 
 
@@ -1852,8 +1853,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = REF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:705:5: ( 'ref' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:705:7: 'ref'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:709:5: ( 'ref' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:709:7: 'ref'
             {
             match("ref"); 
 
@@ -1873,8 +1874,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RESULT_CACHE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:706:14: ( 'result_cache' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:706:16: 'result_cache'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:710:14: ( 'result_cache' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:710:16: 'result_cache'
             {
             match("result_cache"); 
 
@@ -1894,8 +1895,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:707:8: ( 'return' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:707:10: 'return'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:711:8: ( 'return' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:711:10: 'return'
             {
             match("return"); 
 
@@ -1915,8 +1916,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RETURNING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:708:11: ( 'returning' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:708:13: 'returning'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:712:11: ( 'returning' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:712:13: 'returning'
             {
             match("returning"); 
 
@@ -1936,8 +1937,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ROWTYPE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:709:9: ( 'rowtype' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:709:11: 'rowtype'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:713:9: ( 'rowtype' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:713:11: 'rowtype'
             {
             match("rowtype"); 
 
@@ -1957,8 +1958,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SUBTYPE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:710:9: ( 'subtype' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:710:11: 'subtype'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:714:9: ( 'subtype' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:714:11: 'subtype'
             {
             match("subtype"); 
 
@@ -1978,8 +1979,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = USING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:711:6: ( 'using' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:711:8: 'using'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:715:6: ( 'using' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:715:8: 'using'
             {
             match("using"); 
 
@@ -1999,8 +2000,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = VARRAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:712:8: ( 'varray' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:712:10: 'varray'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:716:8: ( 'varray' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:716:10: 'varray'
             {
             match("varray"); 
 
@@ -2020,8 +2021,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = VARYING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:713:9: ( 'varying' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:713:11: 'varying'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:9: ( 'varying' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:11: 'varying'
             {
             match("varying"); 
 
@@ -2041,8 +2042,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = WHEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:714:6: ( 'when' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:714:8: 'when'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:718:6: ( 'when' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:718:8: 'when'
             {
             match("when"); 
 
@@ -2062,10 +2063,10 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = QUOTED_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:2: ( ( 'n' )? '\\'' ( '\\'\\'' | ~ ( '\\'' ) )* '\\'' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:4: ( 'n' )? '\\'' ( '\\'\\'' | ~ ( '\\'' ) )* '\\''
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:2: ( ( 'n' )? '\\'' ( '\\'\\'' | ~ ( '\\'' ) )* '\\'' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:4: ( 'n' )? '\\'' ( '\\'\\'' | ~ ( '\\'' ) )* '\\''
             {
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:4: ( 'n' )?
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:4: ( 'n' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -2074,7 +2075,7 @@ public class PLSQLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:6: 'n'
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:6: 'n'
                     {
                     match('n'); 
 
@@ -2084,7 +2085,7 @@ public class PLSQLLexer extends Lexer {
             }
 
             match('\''); 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:18: ( '\\'\\'' | ~ ( '\\'' ) )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:18: ( '\\'\\'' | ~ ( '\\'' ) )*
             loop2:
             do {
                 int alt2=3;
@@ -2106,7 +2107,7 @@ public class PLSQLLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:20: '\\'\\''
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:20: '\\'\\''
             	    {
             	    match("''"); 
 
@@ -2114,7 +2115,7 @@ public class PLSQLLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:717:29: ~ ( '\\'' )
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:29: ~ ( '\\'' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2151,7 +2152,7 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:2: ( ( 'a' .. 'z' ) ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )* | DOUBLEQUOTED_STRING )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:725:2: ( ( 'a' .. 'z' ) ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )* | DOUBLEQUOTED_STRING )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -2169,16 +2170,16 @@ public class PLSQLLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:4: ( 'a' .. 'z' ) ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )*
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:725:4: ( 'a' .. 'z' ) ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )*
                     {
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:4: ( 'a' .. 'z' )
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:721:6: 'a' .. 'z'
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:725:4: ( 'a' .. 'z' )
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:725:6: 'a' .. 'z'
                     {
                     matchRange('a','z'); 
 
                     }
 
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:722:3: ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )*
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:726:3: ( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )*
                     loop3:
                     do {
                         int alt3=2;
@@ -2215,7 +2216,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:723:4: DOUBLEQUOTED_STRING
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:727:4: DOUBLEQUOTED_STRING
                     {
                     mDOUBLEQUOTED_STRING(); 
 
@@ -2236,8 +2237,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SEMI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:726:2: ( ';' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:726:4: ';'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:730:2: ( ';' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:730:4: ';'
             {
             match(';'); 
 
@@ -2256,8 +2257,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = COLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:729:2: ( ':' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:729:4: ':'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:733:2: ( ':' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:733:4: ':'
             {
             match(':'); 
 
@@ -2276,8 +2277,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DOUBLEDOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:732:2: ( POINT POINT )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:732:4: POINT POINT
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:736:2: ( POINT POINT )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:736:4: POINT POINT
             {
             mPOINT(); 
             mPOINT(); 
@@ -2297,8 +2298,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:735:2: ( POINT )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:735:4: POINT
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:739:2: ( POINT )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:739:4: POINT
             {
             mPOINT(); 
 
@@ -2315,8 +2316,8 @@ public class PLSQLLexer extends Lexer {
     // $ANTLR start "POINT"
     public final void mPOINT() throws RecognitionException {
         try {
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:739:2: ( '.' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:739:4: '.'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:743:2: ( '.' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:743:4: '.'
             {
             match('.'); 
 
@@ -2333,8 +2334,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:742:2: ( ',' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:742:4: ','
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:746:2: ( ',' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:746:4: ','
             {
             match(','); 
 
@@ -2353,8 +2354,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EXPONENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:745:2: ( '**' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:745:4: '**'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:749:2: ( '**' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:749:4: '**'
             {
             match("**"); 
 
@@ -2374,8 +2375,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ASTERISK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:748:2: ( '*' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:748:4: '*'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:752:2: ( '*' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:752:4: '*'
             {
             match('*'); 
 
@@ -2394,8 +2395,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = AT_SIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:751:2: ( '@' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:751:4: '@'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:755:2: ( '@' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:755:4: '@'
             {
             match('@'); 
 
@@ -2414,8 +2415,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:754:2: ( ')' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:754:4: ')'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:758:2: ( ')' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:758:4: ')'
             {
             match(')'); 
 
@@ -2434,8 +2435,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:757:2: ( '(' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:757:4: '('
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:761:2: ( '(' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:761:4: '('
             {
             match('('); 
 
@@ -2454,8 +2455,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RBRACK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:760:2: ( ']' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:760:4: ']'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:764:2: ( ']' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:764:4: ']'
             {
             match(']'); 
 
@@ -2474,8 +2475,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LBRACK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:763:2: ( '[' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:763:4: '['
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:767:2: ( '[' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:767:4: '['
             {
             match('['); 
 
@@ -2494,8 +2495,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:766:2: ( '+' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:766:4: '+'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:770:2: ( '+' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:770:4: '+'
             {
             match('+'); 
 
@@ -2514,8 +2515,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:769:2: ( '-' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:769:4: '-'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:773:2: ( '-' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:773:4: '-'
             {
             match('-'); 
 
@@ -2534,8 +2535,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DIVIDE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:772:2: ( '/' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:772:4: '/'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:776:2: ( '/' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:776:4: '/'
             {
             match('/'); 
 
@@ -2554,8 +2555,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = EQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:775:2: ( '=' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:775:4: '='
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:779:2: ( '=' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:779:4: '='
             {
             match('='); 
 
@@ -2574,8 +2575,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = PERCENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:778:2: ( '%' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:778:4: '%'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:782:2: ( '%' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:782:4: '%'
             {
             match('%'); 
 
@@ -2594,8 +2595,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LLABEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:781:2: ( '<<' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:781:4: '<<'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:785:2: ( '<<' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:785:4: '<<'
             {
             match("<<"); 
 
@@ -2615,8 +2616,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = RLABEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:784:2: ( '>>' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:784:4: '>>'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:788:2: ( '>>' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:788:4: '>>'
             {
             match(">>"); 
 
@@ -2636,8 +2637,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ASSIGN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:787:2: ( ':=' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:787:4: ':='
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:791:2: ( ':=' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:791:4: ':='
             {
             match(":="); 
 
@@ -2657,8 +2658,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ARROW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:790:2: ( '=>' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:790:4: '=>'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:794:2: ( '=>' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:794:4: '=>'
             {
             match("=>"); 
 
@@ -2678,8 +2679,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = VERTBAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:793:2: ( '|' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:793:4: '|'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:797:2: ( '|' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:797:4: '|'
             {
             match('|'); 
 
@@ -2698,8 +2699,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = DOUBLEVERTBAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:796:2: ( '||' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:796:4: '||'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:800:2: ( '||' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:800:4: '||'
             {
             match("||"); 
 
@@ -2719,7 +2720,7 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = NOT_EQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:799:2: ( '<>' | '!=' | '~=' | '^=' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:803:2: ( '<>' | '!=' | '~=' | '^=' )
             int alt5=4;
             switch ( input.LA(1) ) {
             case '<':
@@ -2751,7 +2752,7 @@ public class PLSQLLexer extends Lexer {
 
             switch (alt5) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:799:4: '<>'
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:803:4: '<>'
                     {
                     match("<>"); 
 
@@ -2759,7 +2760,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:799:11: '!='
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:803:11: '!='
                     {
                     match("!="); 
 
@@ -2767,7 +2768,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:799:18: '~='
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:803:18: '~='
                     {
                     match("~="); 
 
@@ -2775,7 +2776,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:799:24: '^='
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:803:24: '^='
                     {
                     match("^="); 
 
@@ -2797,8 +2798,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:802:2: ( '<' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:802:4: '<'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:806:2: ( '<' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:806:4: '<'
             {
             match('<'); 
 
@@ -2817,8 +2818,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = LEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:805:2: ( '<=' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:805:4: '<='
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:809:2: ( '<=' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:809:4: '<='
             {
             match("<="); 
 
@@ -2838,8 +2839,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = GTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:808:2: ( '>' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:808:4: '>'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:812:2: ( '>' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:812:4: '>'
             {
             match('>'); 
 
@@ -2858,8 +2859,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = GEQ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:811:2: ( '>=' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:811:4: '>='
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:815:2: ( '>=' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:815:4: '>='
             {
             match(">="); 
 
@@ -2879,8 +2880,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:814:5: ( N )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:814:9: N
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:818:5: ( N )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:818:9: N
             {
             mN(); 
 
@@ -2899,11 +2900,11 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = REAL_NUMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:817:2: ( NUMBER_VALUE ( 'e' ( PLUS | MINUS )? N )? )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:817:4: NUMBER_VALUE ( 'e' ( PLUS | MINUS )? N )?
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:2: ( NUMBER_VALUE ( 'e' ( PLUS | MINUS )? N )? )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:4: NUMBER_VALUE ( 'e' ( PLUS | MINUS )? N )?
             {
             mNUMBER_VALUE(); 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:817:17: ( 'e' ( PLUS | MINUS )? N )?
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:17: ( 'e' ( PLUS | MINUS )? N )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2912,10 +2913,10 @@ public class PLSQLLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:817:19: 'e' ( PLUS | MINUS )? N
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:19: 'e' ( PLUS | MINUS )? N
                     {
                     match('e'); 
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:817:23: ( PLUS | MINUS )?
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:23: ( PLUS | MINUS )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -2962,19 +2963,19 @@ public class PLSQLLexer extends Lexer {
     // $ANTLR start "NUMBER_VALUE"
     public final void mNUMBER_VALUE() throws RecognitionException {
         try {
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:2: ({...}? => N POINT ( N )? | POINT N | N )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:825:2: ({...}? => N POINT ( N )? | POINT N | N )
             int alt9=3;
             alt9 = dfa9.predict(input);
             switch (alt9) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:4: {...}? => N POINT ( N )?
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:825:4: {...}? => N POINT ( N )?
                     {
                     if ( !((numberDotValid())) ) {
                         throw new FailedPredicateException(input, "NUMBER_VALUE", "numberDotValid()");
                     }
                     mN(); 
                     mPOINT(); 
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:34: ( N )?
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:825:34: ( N )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -2983,7 +2984,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     switch (alt8) {
                         case 1 :
-                            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:821:34: N
+                            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:825:34: N
                             {
                             mN(); 
 
@@ -2996,7 +2997,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:822:4: POINT N
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:826:4: POINT N
                     {
                     mPOINT(); 
                     mN(); 
@@ -3004,7 +3005,7 @@ public class PLSQLLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:823:4: N
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:827:4: N
                     {
                     mN(); 
 
@@ -3021,11 +3022,11 @@ public class PLSQLLexer extends Lexer {
     // $ANTLR start "N"
     public final void mN() throws RecognitionException {
         try {
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:827:2: ( '0' .. '9' ( '0' .. '9' )* )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:827:4: '0' .. '9' ( '0' .. '9' )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:2: ( '0' .. '9' ( '0' .. '9' )* )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:4: '0' .. '9' ( '0' .. '9' )*
             {
             matchRange('0','9'); 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:827:15: ( '0' .. '9' )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:15: ( '0' .. '9' )*
             loop10:
             do {
                 int alt10=2;
@@ -3038,7 +3039,7 @@ public class PLSQLLexer extends Lexer {
 
                 switch (alt10) {
             	case 1 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:827:17: '0' .. '9'
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:17: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -3062,11 +3063,11 @@ public class PLSQLLexer extends Lexer {
     // $ANTLR start "DOUBLEQUOTED_STRING"
     public final void mDOUBLEQUOTED_STRING() throws RecognitionException {
         try {
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:2: ( '\"' (~ ( '\"' ) )* '\"' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:4: '\"' (~ ( '\"' ) )* '\"'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:835:2: ( '\"' (~ ( '\"' ) )* '\"' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:835:4: '\"' (~ ( '\"' ) )* '\"'
             {
             match('\"'); 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:8: (~ ( '\"' ) )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:835:8: (~ ( '\"' ) )*
             loop11:
             do {
                 int alt11=2;
@@ -3079,7 +3080,7 @@ public class PLSQLLexer extends Lexer {
 
                 switch (alt11) {
             	case 1 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:831:10: ~ ( '\"' )
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:835:10: ~ ( '\"' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -3114,8 +3115,8 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:833:4: ( ( ' ' | '\\r' | '\\t' | '\\n' ) )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:833:6: ( ' ' | '\\r' | '\\t' | '\\n' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:837:4: ( ( ' ' | '\\r' | '\\t' | '\\n' ) )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:837:6: ( ' ' | '\\r' | '\\t' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -3143,12 +3144,12 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:2: ( '--' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:4: '--' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:2: ( '--' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:4: '--' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match("--"); 
 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:9: (~ ( '\\n' | '\\r' ) )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:9: (~ ( '\\n' | '\\r' ) )*
             loop12:
             do {
                 int alt12=2;
@@ -3161,7 +3162,7 @@ public class PLSQLLexer extends Lexer {
 
                 switch (alt12) {
             	case 1 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:9: ~ ( '\\n' | '\\r' )
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:9: ~ ( '\\n' | '\\r' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -3181,7 +3182,7 @@ public class PLSQLLexer extends Lexer {
                 }
             } while (true);
 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:23: ( '\\r' )?
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:23: ( '\\r' )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -3190,7 +3191,7 @@ public class PLSQLLexer extends Lexer {
             }
             switch (alt13) {
                 case 1 :
-                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:836:23: '\\r'
+                    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:840:23: '\\r'
                     {
                     match('\r'); 
 
@@ -3217,12 +3218,12 @@ public class PLSQLLexer extends Lexer {
         try {
             int _type = ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:839:2: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:839:4: '/*' ( options {greedy=false; } : . )* '*/'
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:843:2: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:843:4: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:839:9: ( options {greedy=false; } : . )*
+            // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:843:9: ( options {greedy=false; } : . )*
             loop14:
             do {
                 int alt14=2;
@@ -3247,7 +3248,7 @@ public class PLSQLLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:839:37: .
+            	    // /home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/gramaticas/PLSQL.g:843:37: .
             	    {
             	    matchAny(); 
 
@@ -4212,7 +4213,7 @@ public class PLSQLLexer extends Lexer {
             this.transition = DFA9_transition;
         }
         public String getDescription() {
-            return "819:1: fragment NUMBER_VALUE : ({...}? => N POINT ( N )? | POINT N | N );";
+            return "823:1: fragment NUMBER_VALUE : ({...}? => N POINT ( N )? | POINT N | N );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
