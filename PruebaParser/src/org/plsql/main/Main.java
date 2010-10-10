@@ -10,46 +10,50 @@ import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.debug.DebugEventListener;
 import org.antlr.runtime.debug.DebugTokenStream;
 import org.antlr.runtime.tree.CommonTree;
+import org.antlr.runtime.tree.CommonTreeNodeStream;
+import org.antlr.runtime.tree.Tree;
 import org.plsql.PLSQLLexer;
 import org.plsql.PLSQLParser;
-import org.plsql.PLSQLParser.body_return;
-import org.plsql.PLSQLParser.procedure_declaration_or_definition_return;
-import org.plsql.PLSQLParser.procedure_declaration_return;
 import org.plsql.PLSQLParser.procedure_definition_return;
-import org.plsql.PLSQLParser.procedure_heading_return;
 
 public class Main {
 
 	/**
 	 * @param args
-	 * @throws IOException 
-	 * @throws RecognitionException 
+	 * @throws IOException
+	 * @throws RecognitionException
 	 */
-	public static void main(String[] args) throws IOException, RecognitionException {
-		String file = "/home/ojcchar1/Documents/workspaces-eclipse/tesis/PruebaParser/procedimientos/Af_pafdv_saldini.sql";
+	@SuppressWarnings({ "rawtypes", "unused" })
+	public static void main(String[] args) throws IOException,
+			RecognitionException {
+		String file = "/home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/procedimientos/Af_pafdv_saldini.sql";
 		CharStream cs = new ANTLRFileStream(file);
-		
-		PLSQLLexer lexer=new PLSQLLexer(cs);
-		
-		//comentario prueba
-		
+
+		PLSQLLexer lexer = new PLSQLLexer(cs);
+
 		CommonTokenStream tokens = new CommonTokenStream();
 		tokens.setTokenSource(lexer);
-		
-		DebugEventListener dbg=null;
-		DebugTokenStream tokendbg=new DebugTokenStream(tokens, dbg);
-		
-		PLSQLParser parser=new PLSQLParser(tokens);
-		procedure_definition_return procedimiento = parser.procedure_definition();
+
+		DebugEventListener dbg = null;
+		DebugTokenStream tokendbg = new DebugTokenStream(tokens, dbg);
+
+		PLSQLParser parser = new PLSQLParser(tokens);
+		procedure_definition_return procedimiento = parser
+				.procedure_definition();
 		CommonTree arbol = (CommonTree) procedimiento.getTree();
-		System.out.println(arbol);
-		
+
 		List list = arbol.getChildren();
-		
+
 		for (Object object : list) {
-			System.out.println(object);
+			System.out.print(object);
 		}
-		
-	}	
+
+		System.out.println("tree=" + ((Tree) arbol).toStringTree());
+
+		CommonTreeNodeStream nodes = new CommonTreeNodeStream((Tree) arbol);
+		nodes.setTokenStream(tokens);
+
+		System.out.println(nodes);
+	}
 
 }
