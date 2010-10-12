@@ -31,6 +31,10 @@ tokens {
     PARAMS;
     PARAM;
     BODY;
+    VARDECL;
+    PROCNAME;
+    PACKCALL;
+    STRING;
 }
 
 @header {
@@ -101,8 +105,13 @@ create_object
     ;
 
 procedure_heading :
-        PROCEDURE ID parameter_declarations? -> ^(PROC ID parameter_declarations?)
+        PROCEDURE procedure_nam parameter_declarations? 
     ;
+
+procedure_nam 
+	:
+	ID -> ^(PROCNAME ID)	
+	;
 
 function_heading :
         FUNCTION ID parameter_declarations? RETURN datatype
@@ -114,30 +123,44 @@ parameter_declarations :
     ;
 
 parameter_declaration :
-        ID ( IN | ( ( OUT | IN OUT ) NOCOPY? ) )? datatype
-        ( ( ASSIGN | DEFAULT ) expression )? -> ^(PARAM ID  datatype)
-    ;
+       parameter_declaration_spec -> ^(PARAM parameter_declaration_spec  )
+    ;	
+    
+parameter_declaration_spec
+	:	 ID ( IN | ( ( OUT | IN OUT ) NOCOPY? ) )? datatype
+        ( ( ASSIGN | DEFAULT ) expression )?;
 
 declare_section : 
-    ( type_definition SEMI -> ^(DECL )
-    | subtype_definition SEMI -> ^(DECL )
-    | cursor_definition SEMI -> ^(DECL )
-    | item_declaration SEMI -> ^(DECL )
-    | function_declaration_or_definition SEMI -> ^(DECL )
-    | procedure_declaration_or_definition SEMI -> ^(DECL )
-    | pragma SEMI -> ^(DECL )
-    )+ 
+    ( 
+    declare_section_items
+    )+ -> ^(DECL (declare_section_items)+)
     ;
+    
+declare_section_items :
+    type_definition SEMI 
+    | subtype_definition SEMI 
+    | cursor_definition SEMI 
+    | item_declaration SEMI 
+    | function_declaration_or_definition SEMI 
+    | procedure_declaration_or_definition SEMI 
+    | pragma SEMI 
+	; 
 
 cursor_definition :
         CURSOR ID parameter_declarations? IS select_statement -> ^(DEFCURSOR CURSOR ID parameter_declarations? IS select_statement)
     ;
 
 item_declaration
-    : variable_declaration
+    : 
+    item_declaration_items ->^(VARDECL item_declaration_items)
+    ;
+
+item_declaration_items
+	:	
+	variable_declaration
     | constant_declaration
     | exception_declaration
-    ;
+	;
 
 variable_declaration :
         ID datatype (  (  NOT NULL )? (  ASSIGN  | DEFAULT ) expression  )?
@@ -220,15 +243,25 @@ procedure_declaration :
 
 procedure_definition :
 	procedure_heading
-	( IS | AS ) declare_section
-	? body 
+	procedure_is_as declare_section
+	? body -> ^(PROC procedure_heading
+	procedure_is_as declare_section
+	? body)
 	;
+
+procedure_is_as
+	:	
+	( IS | AS )
+	;	
 	
 body 	:	
-	BEGIN statement SEMI st_pragma
-	( EXCEPTION exception_handler+ )? END ID? -> ^(BODY BEGIN statement SEMI st_pragma
-	( EXCEPTION exception_handler+ )? END ID?)
+	BEGIN body_spec END ID? -> ^(BODY BEGIN body_spec END ID?)
 	;
+body_spec
+	:	
+	statement SEMI st_pragma
+	( EXCEPTION exception_handler+ )? 
+	;	
 	
 st_pragma 
 	:
@@ -265,7 +298,7 @@ statement :
     ;
 
 lvalue
-    : call ( DOT call )*
+    : call ( DOT call )* -> ^(PACKCALL call ( DOT call )*)
     ;
 
 assign_or_call_statement
@@ -273,7 +306,7 @@ assign_or_call_statement
     ;
 
 call
-    : COLON? ID ( LPAREN ( parameter ( COMMA parameter )* )? RPAREN )? -> ^(PROC_CALL COLON? ID ( LPAREN ( parameter ( COMMA parameter )* )? RPAREN )?)
+    : COLON? ID ( LPAREN ( parameter ( COMMA parameter )* )? RPAREN )? 
     ;
 
 delete_call
@@ -522,8 +555,11 @@ atom
     ;
     
 variable_or_function_call
-    : call ( DOT call )* ( DOT delete_call )? 
+    : variable_or_function_call_spec -> ^(PROC_CALL variable_or_function_call_spec)
+    
     ;
+variable_or_function_call_spec
+	:call ( DOT call )* ( DOT delete_call )?	;
 
 attribute
     : BULK_ROWCOUNT LPAREN expression RPAREN
@@ -558,7 +594,7 @@ boolean_literal
     ;
 
 string_literal
-    : QUOTED_STRING
+    : QUOTED_STRING -> ^(STRING QUOTED_STRING)
     ;
 
 collection_exists
@@ -638,106 +674,106 @@ kTYPE : {input.LT(1).getText().equalsIgnoreCase("type")}? ID;
 kVALUES : {input.LT(1).getText().equalsIgnoreCase("values")}? ID;
 
 
-AND	:	'and'	;
-ARRAY : 'array' ;
-AS : 'as' ;
-AUTHID: 'authid';
-BETWEEN : 'between' ;
-BODY	:	'body';
-BULK: 'bulk';
-BULK_ROWCOUNT: 'bulk_rowcount';
-BY	:	'by';
-CASE: 'case';
-CREATE: 'create';
-COLLECT:	'collect';
-COMMIT	:	'commit';
-CURRENT_USER: 'current_user';
-DEFAULT : 'default' ;
-DEFINER: 'definer';
-DELETE	:	'delete';
-ELSE : 'else' ;
-ELSIF	:	'elsif';
-EXTERNAL:	'external';
-FALSE	:	'false';
-FETCH	:	'fetch';
-FOR : 'for' ;
-FORALL : 'forall' ;
-GOTO	:	'goto';
-IF	:	'if';
-IN : 'in' ;
-INDEX : 'index' ;
-INSERT	:	'insert';
-INTO	:	'into';
-IS : 'is' ;
-LANGUAGE:	'language';
-LIKE : 'like' ;
-LIMIT : 'limit' ;
-LOCK	:	'lock';
-NOT : 'not' ;
-NOTFOUND:	'notfound';
-NULL : 'null' ;
-OPEN	:	'open';
-OR : 'or' ;
-PACKAGE: 'package';
-RAISE	:	'raise';
-ROLLBACK:	'rollback';
-SAVEPOINT	:	'savepoint';
-SELECT	:	'select';
-SET	:	'set';
-SQL	:	'sql';
-TABLE	:	'table';
-TRANSACTION	:	'transaction';
-TRUE	:	'true';
-THEN : 'then' ;
-UPDATE	:	'update';
-WHILE	:	'while';
+AND	:	A N D 	;
+ARRAY : A R R A Y  ;
+AS : A S  ;
+AUTHID: A U T H I D ;
+BETWEEN : B E T W E E N  ;
+BODY	:	B O D Y ;
+BULK: B U L K ;
+BULK_ROWCOUNT:  'bulk_rowcount';
+BY	:	B Y ;
+CASE: C A S E ;
+CREATE: C R E A T E ;
+COLLECT:	C O L L E C T ;
+COMMIT	:	C O M M I T ;
+CURRENT_USER:  'current_user';
+DEFAULT : D E F A U L T  ;
+DEFINER: D E F I N E R ;
+DELETE	:	D E L E T E ;
+ELSE : E L S E  ;
+ELSIF	:	E L S I F ;
+EXTERNAL:	E X T E R N A L ;
+FALSE	:	F A L S E ;
+FETCH	:	F E T C H ;
+FOR : F O R  ;
+FORALL : F O R A L L  ;
+GOTO	:	G O T O ;
+IF	:	I F ;
+IN : I N  ;
+INDEX : I N D E X  ;
+INSERT	:	I N S E R T ;
+INTO	:	I N T O ;
+IS : I S  ;
+LANGUAGE:	L A N G U A G E ;
+LIKE : L I K E  ;
+LIMIT : L I M I T  ;
+LOCK	:	L O C K ;
+NOT : N O T  ;
+NOTFOUND:	N O T F O U N D ;
+NULL : N U L L  ;
+OPEN	:	O P E N ;
+OR : O R  ;
+PACKAGE: P A C K A G E ;
+RAISE	:	R A I S E ;
+ROLLBACK:	R O L L B A C K ;
+SAVEPOINT	:	S A V E P O I N T ;
+SELECT	:	S E L E C T ;
+SET	:	S E T ;
+SQL	:	S Q L ;
+TABLE	:	T A B L E ;
+TRANSACTION	:	T R A N S A C T I O N ;
+TRUE	:	T R U E ;
+THEN : T H E N  ;
+UPDATE	:	U P D A T E ;
+WHILE	:	W H I L E ;
 INSERTING
-	:	'inserting';
-UPDATING:	'updating';
-DELETING:	'deleting';
-ISOPEN	:	'isopen';
-EXISTS	:	'exists';
+	:	I N S E R T I N G ;
+UPDATING:	U P D A T I N G ;
+DELETING:	D E L E T I N G ;
+ISOPEN	:	I S O P E N ;
+EXISTS	:	E X I S T S ;
 
-BEGIN	:	'begin'	;
-CLOSE	:	'close';
-CONSTANT	:	'constant'	;
-CONTINUE:	'continue';
-CURSOR	:	'cursor'	;
-DECLARE	:	'declare'	;
-DETERMINISTIC	: 'deterministic'	;
-END	:	'end'	;
-EXCEPTION	:	'exception'	;
-EXECUTE	:	'execute';
-EXIT	:	'exit';
-FUNCTION	:	'function'	;
-IMMEDIATE	:	'immediate';
-LOOP	:	'loop';
-NOCOPY	:	'nocopy'	;
-OTHERS	:	'others'	;
-OUT	:	'out'	;
+BEGIN	:	B E G I N 	;
+CLOSE	:	C L O S E ;
+CONSTANT	:	C O N S T A N T 	;
+CONTINUE:	C O N T I N U E ;
+CURSOR	:	C U R S O R 	;
+DECLARE	:	D E C L A R E 	;
+DETERMINISTIC	: D E T E R M I N I S T I C 	;
+END	:	E N D 	;
+EXCEPTION	:	E X C E P T I O N 	;
+EXECUTE	:	E X E C U T E ;
+EXIT	:	E X I T ;
+FUNCTION	:	F U N C T I O N 	;
+IMMEDIATE	:	I M M E D I A T E ;
+LOOP	:	L O O P ;
+NOCOPY	:	N O C O P Y 	;
+OTHERS	:	O T H E R S 	;
+OUT	:	O U T 	;
 PARALLEL_ENABLE	:	'parallel_enable';
-PIPELINED	:	'pipelined'	;
-PRAGMA	:	'pragma'	;
-PROCEDURE	:	'procedure'	;
-RECORD	:	'record'	;
-REF	:	'ref'	;
+PIPELINED	:	P I P E L I N E D 	;
+PRAGMA	:	P R A G M A 	;
+PROCEDURE	:	P R O C E D U R E 	;
+RECORD	:	R E C O R D 	;
+REF	:	R E F 	;
 RESULT_CACHE	:	'result_cache'	;
-RETURN	:	'return'	;
-RETURNING	:	'returning'	;
-ROWTYPE	:	'rowtype'	;
-SUBTYPE	:	'subtype'	;
-USING:	'using'	;
-VARRAY	:	'varray'	;
-VARYING	:	'varying'	;
-WHEN	:	'when'	;
+RETURN	:	R E T U R N 	;
+RETURNING	:	R E T U R N I N G 	;
+ROWTYPE	:	R O W T Y P E 	;
+SUBTYPE	:	S U B T Y P E 	;
+USING:	U S I N G 	;
+VARRAY	:	V A R R A Y 	;
+VARYING	:	V A R Y I N G 	;
+WHEN	:	W H E N 	;
 
 QUOTED_STRING
-	:	( 'n' )? '\'' ( '\'\'' | ~('\'') )* '\''
+	:	( 'N ' )? '\'' ( '\'\'' | ~('\'') )* '\''
 	;
 
 ID
-	:	( 'a' .. 'z' )
-		( 'a' .. 'z' | '0' .. '9' | '_' | '$' | '#' )*
+	:	(( 'a' .. 'z' )  | ('A' .. 'Z'))
+		( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '$' | '#' )*
 	|	DOUBLEQUOTED_STRING
 	;
 SEMI
@@ -752,6 +788,7 @@ DOUBLEDOT
 DOT
 	:	POINT
 	;
+
 fragment
 POINT
 	:	'.'
@@ -829,19 +866,19 @@ GEQ
 	:	'>='
 	;
 INTEGER
-    :   N
+    :   NUM
     ;
 REAL_NUMBER
-	:	NUMBER_VALUE	( 'e' ( PLUS | MINUS )? N )?
+	:	NUMBER_VALUE	( 'e' ( PLUS | MINUS )? NUM )?
 	;
 fragment
 NUMBER_VALUE
-	:	{numberDotValid()}?=> N POINT N?
-	|	POINT N
-	|	N
+	:	{numberDotValid()}?=> NUM POINT NUM?
+	|	POINT NUM
+	|	NUM
 	;
 fragment
-N
+NUM
 	: '0' .. '9' ( '0' .. '9' )*
 	;
 fragment
@@ -856,3 +893,30 @@ SL_COMMENT
 ML_COMMENT
 	:	'/*' ( options {greedy=false;} : . )* '*/' {$channel=HIDDEN;}
 	;
+
+fragment A:('a'|'A');
+fragment B:('b'|'B');
+fragment C:('c'|'C');
+fragment D:('d'|'D');
+fragment E:('e'|'E');
+fragment F:('f'|'F');
+fragment G:('g'|'G');
+fragment H:('h'|'H');
+fragment I:('i'|'I');
+fragment J:('j'|'J');
+fragment K:('k'|'K');
+fragment L:('l'|'L');
+fragment M:('m'|'M');
+fragment N:('n'|'N');
+fragment O:('o'|'O');
+fragment P:('p'|'P');
+fragment Q:('q'|'Q');
+fragment R:('r'|'R');
+fragment S:('s'|'S');
+fragment T:('t'|'T');
+fragment U:('u'|'U');
+fragment V:('v'|'V');
+fragment W:('w'|'W');
+fragment X:('x'|'X');
+fragment Y:('y'|'Y');
+fragment Z:('z'|'Z');

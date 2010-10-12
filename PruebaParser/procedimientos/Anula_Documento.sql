@@ -1,4 +1,3 @@
-create or replace
 PROCEDURE Anula_Documento
             (p_docu        IN  NUMBER,
              p_fecha       IN  DATE,
@@ -208,11 +207,11 @@ BEGIN
     -- FOR r in c_movctb(v_cias,v_tpco_gen,v_nrocomant,v_fecmovant) LOOP                          --(1)
     FOR r IN c_movctb(v_cias,v_tpco_gen,v_nrocomant, v_fecmovant /*v_fecmov*/) LOOP               -- Soli 2391
 
-    /* Valida vigencia del documento para asignar la cuenta contable que le corresponde.
+    
+        /* Valida vigencia del documento para asignar la cuenta contable que le corresponde.
 	    Si la vigencia del documento es  anterior a la fecha en que se genera la anulacion se debe asignar la
 		cuenta contable perteneciente a la columna pfac_mayo_anu_vigant de la tabla fa_tpfac, de lo contrario
 		se asigna la cuenta contable traida de la consulta del cursor                                                                           --2720	*/
-
        	IF r.mvco_tporan = 'C' THEN
 		v_descri:=r.mvco_descri;
 		 FOR I IN 1..3 LOOP

@@ -1,6 +1,7 @@
 package org.plsql.main;
 
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.antlr.runtime.ANTLRFileStream;
@@ -11,7 +12,11 @@ import org.antlr.runtime.debug.DebugEventListener;
 import org.antlr.runtime.debug.DebugTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
-import org.plsql.PLSQLParser.procedure_definition_return;
+import org.parser.entidades.Body;
+import org.parser.entidades.Declaracion;
+import org.parser.entidades.Llamado;
+import org.parser.entidades.Parametro;
+import org.parser.entidades.Procedimiento;
 import org.plsql.PLSQLTreeLexer;
 import org.plsql.PLSQLTreeParser;
 
@@ -23,9 +28,8 @@ public class MainTree {
 	 * @throws RecognitionException
 	 */
 	@SuppressWarnings({ "rawtypes", "unused" })
-	public static void main(String[] args) throws IOException,
-			RecognitionException {
-		String file = "/home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/procedimientos/Af_pafdv_saldini.sql";
+	public static void main(String[] args) throws IOException, RecognitionException {
+		String file = "/home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/procedimientos/Anula_Documento.sql";
 		CharStream cs = new ANTLRFileStream(file);
 
 		PLSQLTreeLexer lexer = new PLSQLTreeLexer(cs);
@@ -37,26 +41,156 @@ public class MainTree {
 		DebugTokenStream tokendbg = new DebugTokenStream(tokens, dbg);
 
 		PLSQLTreeParser parser = new PLSQLTreeParser(tokens);
-		org.plsql.PLSQLTreeParser.procedure_definition_return procedimiento = parser
-				.procedure_definition();
+		org.plsql.PLSQLTreeParser.procedure_definition_return procedimiento = parser.procedure_definition();
 		CommonTree arbol = (CommonTree) procedimiento.getTree();
 
 		List list = arbol.getChildren();
 
-//		for (Object object : list) {
-//			System.out.print(object);
-//		}
-//		Tree arbol2 = (Tree) arbol;
-//		System.out.println("\ntree=" + ((Tree) arbol).toStringTree());
+//		printTree(arbol, 1);
+		Procedimiento proc = construirProcedimiento(arbol);
 		
-		printTree(arbol, 1);
+		System.out.println(proc);
 
-		// System.out.println(parser.ex);
+	}
 
-		// CommonTreeNodeStream nodes = new CommonTreeNodeStream((Tree) arbol);
-		// nodes.setTokenStream(tokens);
-		//
-		// System.out.println(nodes);
+	private static Procedimiento construirProcedimiento(CommonTree arbol) {
+		Procedimiento proc = new Procedimiento();
+
+		if (arbol == null) {
+			return proc;
+		}
+
+		String nombre = obtenerNombreProc(arbol);
+		Body body = obtenerBodyProc(arbol);
+		Declaracion declaracion = obtenerDeclaracionProc(arbol);
+		List<Parametro> parametros = obtenerParametrosProc(arbol);
+
+		proc.setBody(body);
+		proc.setDeclaracion(declaracion);
+		proc.setNombre(nombre);
+		proc.setParametros(parametros);
+
+		
+		return proc;
+	}
+
+	private static List<Parametro> obtenerParametrosProc(CommonTree arbol) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static Declaracion obtenerDeclaracionProc(CommonTree arbol) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static Body obtenerBodyProc(CommonTree arbol) {
+		Body body = new Body();
+
+		Tree cuerpo = null;
+		if (arbol != null) {
+			for (int i = 0; i < arbol.getChildCount(); i++) {
+				Tree hijo = arbol.getChild(i);
+
+				if (hijo.getType() == PLSQLTreeLexer.BODY) {
+					cuerpo = hijo;
+					break;
+				}
+
+			}
+		}
+
+		List<Llamado> llamados = obtenerLlamadosBody(cuerpo);
+		body.setLlamados(llamados);
+		
+		List<String> cadenas=obtenerCadenasBody(cuerpo);
+		body.setCadenas(cadenas);
+
+		return body;
+	}
+
+	private static List<String> obtenerCadenasBody(Tree arbol) {
+		List<String> cadenas = new LinkedList<String>();
+
+		if (arbol == null) {
+			return cadenas;
+		}
+		
+		for (int i = 0; i < arbol.getChildCount(); i++) {
+			Tree hijo = arbol.getChild(i);
+
+			if (hijo.getType() == PLSQLTreeLexer.STRING) {
+				cadenas.add(hijo.getChild(0).getText().replaceAll("'", ""));
+			}else{
+				List<String> cads = obtenerCadenasBody(hijo);
+				cadenas.addAll(cads);
+			}
+				
+		}
+		
+		return cadenas;
+	}
+
+	private static List<Llamado> obtenerLlamadosBody(Tree arbol) {
+		List<Llamado> llamados = new LinkedList<Llamado>();
+
+		if (arbol == null) {
+			return llamados;
+		}
+
+		for (int i = 0; i < arbol.getChildCount(); i++) {
+			Tree hijo = arbol.getChild(i);
+
+			if (hijo.getType() == PLSQLTreeLexer.PROC_CALL || hijo.getType() == PLSQLTreeLexer.PACKCALL) {
+				String nombreLlamado = obtenerNombreLlamado(hijo);
+
+				if (nombreLlamado != null) {
+
+					Llamado llamado = new Llamado();
+					llamado.setNombreObjeto(nombreLlamado);
+
+					llamados.add(llamado);
+				}
+			}
+
+		}
+
+		return llamados;
+	}
+
+	private static String obtenerNombreLlamado(Tree hijo) {
+		String nombre = null;
+
+		if (hijo == null) {
+			return nombre;
+		}
+
+		int numHijos = hijo.getChildCount();
+		if (numHijos > 2 && "(".equals(hijo.getChild(1).getText())) {
+			nombre = hijo.getChild(0).getText();
+		} else {
+			if (numHijos > 4 && ".".equals(hijo.getChild(1).getText()) && "(".equals(hijo.getChild(3).getText())) {
+				nombre = hijo.getChild(0).getText() + hijo.getChild(1).getText() + hijo.getChild(2).getText();
+			}
+		}
+
+		return nombre;
+	}
+
+	private static String obtenerNombreProc(CommonTree arbol) {
+		String nombre = "";
+		if (arbol != null) {
+			for (int i = 0; i < arbol.getChildCount(); i++) {
+				Tree hijo = arbol.getChild(i);
+
+				if (hijo.getType() == PLSQLTreeLexer.PROCNAME) {
+					nombre = hijo.getChild(0).getText();
+					break;
+				}
+
+			}
+		}
+		return nombre;
 	}
 
 	public static void printTree(CommonTree tree, int indent) {
