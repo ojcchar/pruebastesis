@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.antlr.runtime.ANTLRFileStream;
 import org.antlr.runtime.ANTLRReaderStream;
 import org.antlr.runtime.CharStream;
 import org.antlr.runtime.CommonTokenStream;
@@ -16,6 +17,7 @@ import org.parser.db.DBObjects;
 import org.parser.entidades.Body;
 import org.parser.entidades.Declaracion;
 import org.parser.entidades.Llamado;
+import org.parser.entidades.Paquete;
 import org.parser.entidades.Parametro;
 import org.parser.entidades.Procedimiento;
 import org.plsql.PLSQLTreeLexer;
@@ -31,10 +33,12 @@ public class MainTree {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		String paquete="PI_QSIMU";
-		String codigo = DBObjects.getInstance().obtenerCodigoPackageBody(paquete);
-		
-		CharStream cs = new ANTLRReaderStream(new StringReader(codigo));
+		String paquete = "PI_QSIMU";
+		// String codigo =
+		// DBObjects.getInstance().obtenerCodigoPackageBody(paquete);
+
+		String archivo = "/home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/procedimientos/PI_QSIMU.sql";
+		CharStream cs = obtenerStreamDeArchivo(archivo);
 
 		PLSQLTreeLexer lexer = new PLSQLTreeLexer(cs);
 
@@ -43,22 +47,61 @@ public class MainTree {
 
 		PLSQLTreeParser parser = new PLSQLTreeParser(tokens);
 		package_body_return packageBody = parser.package_body();
-		
+
 		CommonTree arbol = (CommonTree) packageBody.getTree();
 
-		 printTree(arbol, 1);
-	//	pintarProcedimientos();
+		// printTree(arbol, 1);
+		Paquete pack = construirPaquete(arbol);
+		// pintarProcedimientos();
+		System.out.println(pack);
+		DBObjects.getInstance().cerrarConexion();
+	}
 
+	private static Paquete construirPaquete(CommonTree arbol) {
+		Paquete paquete = new Paquete();
+
+		if (arbol == null) {
+			return paquete;
+		}
+
+		List<Procedimiento> procedimientos = new LinkedList<Procedimiento>();
+
+		String nombre = arbol.getChild(2).getChild(0).getText();
+		Tree declaracion = arbol.getChild(4);
+
+		for (int i = 0; i < declaracion.getChildCount(); i++) {
+			CommonTree hijo = (CommonTree) declaracion.getChild(i);
+
+			if (hijo.getType() == PLSQLTreeLexer.PROC) {
+				Procedimiento procedimiento = construirProcedimiento(hijo);
+				procedimientos.add(procedimiento);
+			}
+
+		}
+
+		paquete.setNombre(nombre);
+		paquete.setProcedimientos(procedimientos);
+
+		return paquete;
+	}
+
+	private static CharStream obtenerStreamDeArchivo(String archivo) throws IOException {
+		CharStream cs = new ANTLRFileStream(archivo);
+		return cs;
+	}
+
+	private static CharStream obtenerStreamDeCodigo(String codigo) throws IOException {
+		CharStream cs = new ANTLRReaderStream(new StringReader(codigo));
+		return cs;
 	}
 
 	private static void pintarProcedimientos() throws SQLException, ClassNotFoundException, IOException, RecognitionException {
 		List<String> procedimientos = DBObjects.getInstance().obtenerProcedimientosFunciones();
-
 		for (String pro : procedimientos) {
 
 			String codigo = DBObjects.getInstance().obtenerCodigoProcedimiento(pro);
 
-			CharStream cs = new ANTLRReaderStream(new StringReader(codigo));
+			CharStream cs = obtenerStreamDeCodigo(codigo);
 
 			PLSQLTreeLexer lexer = new PLSQLTreeLexer(cs);
 

@@ -27,20 +27,26 @@ public class DBObjects {
 		return servicio;
 	}
 
+	public synchronized void cerrarConexion() throws SQLException {
+		if (connection != null) {
+			connection.close();
+		}
+	}
+
 	private synchronized void crearConexion() throws ClassNotFoundException, SQLException {
+		if (connection != null) {
+			return;
+		}
+
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 
 		connection = DriverManager.getConnection(URL, USUARIO, USUARIO);
-
-		connection.setAutoCommit(false);
 
 	}
 
 	public List<String> obtenerProcedimientosFunciones() throws SQLException, ClassNotFoundException {
 
-		if (connection == null) {
-			crearConexion();
-		}
+		crearConexion();
 
 		List<String> procedimientos = new LinkedList<String>();
 
@@ -61,9 +67,7 @@ public class DBObjects {
 
 	public String obtenerCodigoProcedimiento(String procedimiento) throws SQLException, ClassNotFoundException {
 
-		if (connection == null) {
-			crearConexion();
-		}
+		crearConexion();
 
 		StringBuffer codigo = new StringBuffer();
 
@@ -81,13 +85,10 @@ public class DBObjects {
 
 		return codigo.toString();
 	}
-	
+
 	public String obtenerCodigoPackageBody(String paquete) throws SQLException, ClassNotFoundException {
 
-		if (connection == null) {
-			crearConexion();
-		}
-
+		crearConexion();
 		StringBuffer codigo = new StringBuffer();
 
 		String query = "SELECT text FROM all_source WHERE type IN ('PACKAGE BODY') AND  name= ?  ORDER BY line";

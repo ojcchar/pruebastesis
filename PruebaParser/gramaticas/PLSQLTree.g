@@ -35,6 +35,8 @@ tokens {
     PROCNAME;
     PACKCALL;
     STRING;
+    PACKNAME;
+    PACK;
 }
 
 @header {
@@ -218,7 +220,7 @@ datatype
 function_declaration_or_definition :
         function_heading
         ( DETERMINISTIC | PIPELINED | PARALLEL_ENABLE | RESULT_CACHE )*
-        ( ( IS | AS ) declare_section? body )?
+        ( is_as declare_section? body )?
 	;
 
 function_declaration :
@@ -229,13 +231,17 @@ function_declaration :
 function_definition :
         function_heading
         ( DETERMINISTIC | PIPELINED | PARALLEL_ENABLE | RESULT_CACHE )*
-        ( IS | AS ) declare_section? body
+        is_as declare_section? body
 	;
 
 procedure_declaration_or_definition :
         procedure_heading
-        ( ( IS | AS ) declare_section? body )?
+        ( is_as declare_section? body )? -> ^(PROC procedure_heading
+        ( is_as declare_section? body )?)
     ;
+
+is_as	:	( IS | AS )
+	;
 
 procedure_declaration :
 	procedure_heading
@@ -251,7 +257,7 @@ procedure_definition :
 
 procedure_is_as
 	:	
-	( IS | AS )
+	is_as
 	;	
 	
 body 	:	
@@ -618,28 +624,44 @@ index
 create_package :
         CREATE ( OR kREPLACE )? PACKAGE ( schema_name=ID DOT )? package_name=ID
         ( invoker_rights_clause )?
-        ( IS | AS ) ( declare_section )? END ( ID )? SEMI
+        is_as ( declare_section )? END ( ID )? SEMI
     ;
 
 create_package_body :
         CREATE ( OR kREPLACE )? PACKAGE BODY ( schema_name=ID DOT )? package_name=ID
-        ( IS | AS ) ( declare_section )?
+        is_as ( declare_section )?
         ( initialize_section=body | END ( package_name2=ID )? )
         SEMI
     ;
 
 package_body :
-        PACKAGE BODY ( schema_name=ID DOT )? package_name=ID
-        ( IS | AS ) ( declare_section )?
-        ( initialize_section=body | END ( package_name2=ID )? )
-        SEMI
+        PACKAGE BODY package_body_spec -> ^(PACK  PACKAGE BODY package_body_spec)
     ;
+
+package_body_spec
+	:	package_body_name
+        is_as ( declare_section )?
+        package_body_end
+	;
+
+package_body_name
+	:	package_body_name_spec -> ^(PACKNAME package_body_name_spec)
+	;
+
+package_body_name_spec
+	:	( schema_name=ID DOT )? package_name=ID 
+	;
+
+package_body_end
+	:	( initialize_section=body | END ( package_name2=ID )? )
+        SEMI
+	;
 
 create_procedure :
         CREATE ( OR kREPLACE )? PROCEDURE ( schema_name=ID DOT )? procedure_name=ID
         ( LPAREN parameter_declaration ( COMMA parameter_declaration )* RPAREN )?
         invoker_rights_clause?
-        ( IS | AS )
+        is_as
         ( declare_section? body
         | call_spec
         | EXTERNAL
@@ -651,7 +673,7 @@ create_function :
         ( LPAREN parameter_declaration ( COMMA parameter_declaration )* RPAREN )?
         RETURN datatype
         invoker_rights_clause?
-        ( IS | AS )
+        is_as
         ( declare_section? body
         | call_spec
         | EXTERNAL

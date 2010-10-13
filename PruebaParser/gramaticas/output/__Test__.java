@@ -13,7 +13,7 @@ public class __Test__ {
 
         PLSQLTreeParser g = new PLSQLTreeParser(tokens, 49100, null);
         try {
-            g.procedure_definition();
+            g.package_body();
         } catch (RecognitionException e) {
             e.printStackTrace();
         }
