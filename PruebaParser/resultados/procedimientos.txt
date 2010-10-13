@@ -1,0 +1,405 @@
+Procedimiento [nombre=co_pdistrib, body=Body [llamados=[Llamado [nombreObjeto=MOD], Llamado [nombreObjeto=MOD], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=TRUNC], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=TRUNC], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=IN_PESTADO_ACT_ANT_SIG, body=Body [llamados=[Llamado [nombreObjeto=Raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=co_pact_saldos_entrada, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=sqlerrm], Llamado [nombreObjeto=sqlerrm]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CO_PTRAE_MVOC, body=Body [llamados=[Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Ge_PSincro_Secuencia, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=SUBSTR], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_Error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=co_pact_saldos_entrada_tmp, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=sqlerrm], Llamado [nombreObjeto=sqlerrm]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Valor_Letras, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=mod], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=replace], Llamado [nombreObjeto=instr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CP_PNUME_ORPA_FASES, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PPrueba, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PY_PVAL_EQUI_PPTO, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=RK_PNUMERA_MOVI, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=py_pval_inf_fadm, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pivadctocial, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=pbd_log, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=SC_PESFI, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pABONA_DOCU, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=least], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=numerar_comp, body=Body [llamados=[Llamado [nombreObjeto=TRUNC]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Concilia, body=Body [llamados=[Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=crea_partida_conciliatoria], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=crea_partida_conciliatoria], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ABS], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pcptocanceladoadic, body=Body [llamados=[Llamado [nombreObjeto=NVL]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pcarga_calenda_mig, body=Body [llamados=[Llamado [nombreObjeto=TO_DATE], Llamado [nombreObjeto=TO_DATE], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_DATE], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_actualiza_cpto, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pcptocanceladoppal, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CUOTA_PPTO_CUOTAS, body=Body [llamados=[Llamado [nombreObjeto=round], Llamado [nombreObjeto=fa_fctmp_consec], Llamado [nombreObjeto=round], Llamado [nombreObjeto=fa_fctmp_consec], Llamado [nombreObjeto=fa_fctmp_consec], Llamado [nombreObjeto=fa_fctmp_consec], Llamado [nombreObjeto=fa_fctmp_consec], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pABONA_CUOT_NUEVO, body=Body [llamados=[Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=least], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pcrea_rmcm, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Pp_PSaldo_Valm_Anu_Orpa, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PP_PNUM_Reserva, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pvlrpag_cred, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=TE_PMVOE, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=TE_PNUMERA_GRUPO, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=SC_Actualizacion_sanul, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PP_PNumerar_Docu, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ACT_SALF_FLUJ, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ACT_SAL_OECJ, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=FA_PABONA_CUOT, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=least], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pabona_docu, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=least], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Te_Pcont_Egre_Cm, body=Body [llamados=[Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=Numerar_Comp], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PP_PSald_x_Docu_x_OrPa, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pNUM_CRED, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pult_cie, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pegreso_cierre_cm, body=Body [llamados=[Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Prueba_Reliquida, body=Body [llamados=[Llamado [nombreObjeto=Fa_Qcartera.porc_cpto], Llamado [nombreObjeto=Fa_Qcartera.porc_cpto], Llamado [nombreObjeto=Fa_Qcartera.porc_cpto], Llamado [nombreObjeto=Fa_Qcartera.val_cpto], Llamado [nombreObjeto=Fa_Pult_Cie], Llamado [nombreObjeto=Fa_Qcartera.val_cpto], Llamado [nombreObjeto=Fa_Qcartera.val_per_int], Llamado [nombreObjeto=Fa_Qcartera.val_cpto], Llamado [nombreObjeto=Fa_Qcartera.val_cpto], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=Fa_Qcartera.valida_mes_febrero], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.val_cuota], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.val_cuota], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=Fa_Qcartera.valida_mes_febrero], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.vlr_iva], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.vlr_iva], Llamado [nombreObjeto=Fa_Qcartera.valida_mes_febrero], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=Fa_Qcartera.ins_cuot], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=GREATEST], Llamado [nombreObjeto=GREATEST], Llamado [nombreObjeto=GREATEST], Llamado [nombreObjeto=Fa_Qcartera.valida_mes_febrero], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=GREATEST], Llamado [nombreObjeto=Fa_Qcartera.ins_cuot], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.valida_mes_febrero], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Qcartera.ins_cuot]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pins_ge_tauxil_itc_mig, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pCrea_itc_ge_tauxil_mig, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pcrear_aplicacion_rol_mig, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CO_PCREA_PPTO_CTOC_PRUEBA, body=Body [llamados=[Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=co_psubtotal, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=ROUND]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CO_PGRABA_ACONT, body=Body [llamados=[Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=RTRIM], Llamado [nombreObjeto=RTRIM], Llamado [nombreObjeto=RTRIM], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CO_PSALPRECO_PPTO, body=Body [llamados=[Llamado [nombreObjeto=PP_QSaldo.Num_Documento], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=Nvl], Llamado [nombreObjeto=Raise_Application_Error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+null:78:5: [procedure_definition, body, body_spec, st_pragma, statement, label, label] mismatched input [@783,2335:2347='volvernumerar',<18>,78:4] expecting LLABEL
+Procedimiento [nombre=IN_Numerar_Docu, body=Body [llamados=[Llamado [nombreObjeto=trunc]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+null:36:5: [procedure_definition, body, body_spec, st_pragma, statement, label, label] mismatched input [@368,1194:1206='volvernumerar',<18>,36:4] expecting LLABEL
+Procedimiento [nombre=Ge_Numerar_Tablas, body=Body [llamados=[Llamado [nombreObjeto=trunc]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=co_preversar_comp_alma, body=Body [llamados=[Llamado [nombreObjeto=numerar_comp], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=co_panular_ent_sal, body=Body [llamados=[Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=in_numerar_docu], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=ge_numerar_tablas], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=af_pnove.crea_nove], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=af_pnove.crea_nove], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=co_pact_saldos_entrada], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=co_pact_saldos_entrada], Llamado [nombreObjeto=co_preversar_comp_alma], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Af_pafdv_saldini, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=af_pnove.Crea_Nove], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CO_PACT_SALDOS_ENTRADA_VALOR, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=in_pestado_act_ant_sig], Llamado [nombreObjeto=sqlerrm], Llamado [nombreObjeto=sqlerrm]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PR_LOG, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=Utl_File.Fopen], Llamado [nombreObjeto=Utl_File.Put_Line], Llamado [nombreObjeto=Utl_File.FClose], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=Utl_File.Fopen], Llamado [nombreObjeto=Utl_File.Fopen], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=Utl_File.Put_Line], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=Utl_File.Put_Line], Llamado [nombreObjeto=Utl_File.FClose], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_psal_cuot_fec, body=Body [llamados=[Llamado [nombreObjeto=SUBSTR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pabona_cuot_infa, body=Body [llamados=[Llamado [nombreObjeto=fa_qcartera.porc_cpto], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=least], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pabona_cuot_inte, body=Body [llamados=[Llamado [nombreObjeto=fa_qcartera.porc_cpto], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=least], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pval_cuot, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_psal_cred, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pact_sal_res_cla, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=TE_PCONCILIA, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PP_PNUMERA_TRASLADO, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=PP_PSald_x_Docu_x_GrMv, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pval_sal_ini, body=Body [llamados=[Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pnum_docu, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CARGA_FLUJO, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Calc_Sald_Ppto, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Calcula_comision, body=Body [llamados=[Llamado [nombreObjeto=round], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=pp_psaldo_TpMv, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=IN_Numerar_Rotulo, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Anula_Documento, body=Body [llamados=[Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=Numerar_Comp], Llamado [nombreObjeto=Fa_Qfinan.ins_enc_ctb], Llamado [nombreObjeto=INSTR], Llamado [nombreObjeto=LTRIM], Llamado [nombreObjeto=INSTR], Llamado [nombreObjeto=SUBSTR], Llamado [nombreObjeto=LTRIM], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=Fa_Qfinan.ins_mov_ctb], Llamado [nombreObjeto=TO_CHAR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CTB_CUOTAS_ALMOTO, body=Body [llamados=[Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=Fa_Fctmc_Consec], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=FA_QCARTERA.PROV_CUOTAS], Llamado [nombreObjeto=SUBSTR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pSAL_CUOT_FEC, body=Body [llamados=[Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CAR_OPE_EFE_CAJ, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pNUM_DOCU, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pSAL_CRED_FEC, body=Body [llamados=[Llamado [nombreObjeto=fc_qcartera.porc_cpto], Llamado [nombreObjeto=fc_pSAL_CUOT_FEC], Llamado [nombreObjeto=to_date], Llamado [nombreObjeto=least], Llamado [nombreObjeto=least], Llamado [nombreObjeto=round], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pacierre_anual_cm, body=Body [llamados=[Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=numerar_comp], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ppto_abona_factura, body=Body [llamados=[Llamado [nombreObjeto=Fa_Qcartera.porc_cpto], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TRUNC], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=GREATEST], Llamado [nombreObjeto=Fa_Psal_Cuot_Fec], Llamado [nombreObjeto=Pi_Qfnge.NDias360], Llamado [nombreObjeto=ROUND], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=LEAST], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=SUBSTR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pnum_cred, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=av_pnumerar_reso, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=SF_PCONTROLES, body=Body [llamados=[Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=SF_QPLAN.SALDO], Llamado [nombreObjeto=SF_QPLAN.SALDOCANJE], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=SF_QPLAN.SALDODISP], Llamado [nombreObjeto=nvl]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=GE_PRango_Periodicidad, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=instr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=CP_PNUM_RADI, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Numerar_OrPa, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Numera_Tesor, body=Body [llamados=[Llamado [nombreObjeto=trunc]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=FA_PABONA_DOCU_NUEVO, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=least], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=py_pnum_liq, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pdocucancelappal, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pdocucancelaadicional, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre="GE_PVALIDACION_ESTRUCTURA_MIG", body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_number]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pabona_cuot_nuevo, body=Body [llamados=[Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=fa_qcartera.porc_cpto], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=least], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Calc_comi_Benefi, body=Body [llamados=[Llamado [nombreObjeto=round], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=round]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ITC_INSERTA_HIST, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=valor, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=ltrim], Llamado [nombreObjeto=replace], Llamado [nombreObjeto=instr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pusua, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=cal_prop_ind, body=Body [llamados=[Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pcierre_anual_cm, body=Body [llamados=[Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=numerar_comp], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_pvalor_cuota, body=Body [llamados=[Llamado [nombreObjeto=fa_qcartera.porc_cpto], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Pp_PSaldo_Valm, body=Body [llamados=[Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=to_date], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Actualiza, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Co_Pcrea_Ppto_Ctoc_Movi, body=Body [llamados=[Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=AV_PINS_ACU_RETE_VIA, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=FA_PCALC_CUOT_SAL, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=power], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=power], Llamado [nombreObjeto=add_months], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=add_months], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pVAL_CUOT, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pULT_CIE, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=In_PCrea_mtinv, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pVAL_SAL_INI, body=Body [llamados=[Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=in_pabre_traslados, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Co_Psalppto_Precontrato, body=Body [llamados=[Llamado [nombreObjeto=Pp_Qsaldo.Num_Documento], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Co_Pcrea_Ppto_Ctoc, body=Body [llamados=[Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TO_NUMBER], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=TO_CHAR], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=DBMS_OUTPUT.PUT_LINE], Llamado [nombreObjeto=vu_sfi.pbd_log], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=Calc_Sald_Ppto], Llamado [nombreObjeto=RAISE_APPLICATION_ERROR]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+null:435:15: [procedure_definition, body, body_spec, st_pragma, statement, if_statement, statement, for_loop_statement, statement, for_loop_statement, statement, label, label] mismatched input [@8156,16506:16510='final',<18>,435:14] expecting LLABEL
+Procedimiento [nombre=IN_PDTSA, body=Body [llamados=[Llamado [nombreObjeto=wmat], Llamado [nombreObjeto=wmat], Llamado [nombreObjeto=in_pcontabiliza.borra_almacenes_en_linea], Llamado [nombreObjeto=raise_application_error], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=FD_PBUSCATPIN, body=Body [llamados=[Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=FD_PBUSCATPIN], Llamado [nombreObjeto=fd_fconcat_ciclo], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pfirmas_rep, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pVLRPAG_CRED, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pVALOR_CUOTA, body=Body [llamados=[Llamado [nombreObjeto=fc_qcartera.porc_cpto], Llamado [nombreObjeto=fc_pSAL_CUOT_FEC], Llamado [nombreObjeto=to_date], Llamado [nombreObjeto=least], Llamado [nombreObjeto=least], Llamado [nombreObjeto=round], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fc_pSAL_CRED, body=Body [llamados=[Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=AV_BORR_TODA_LGAV_3162, body=Body [llamados=[Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Co_Pdistrib_Ppto, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=LTRIM], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pact_sal_res_cpto, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=av_pnumerar_soli, body=Body [llamados=[Llamado [nombreObjeto=to_number], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=substr]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=TE_PSLOE, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=fa_psal_cred_fec, body=Body [llamados=[Llamado [nombreObjeto=fa_qcartera.porc_cpto], Llamado [nombreObjeto=greatest], Llamado [nombreObjeto=FA_PSAL_CUOT_FEC], Llamado [nombreObjeto=pi_qfnge.NDias360], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=trunc], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=to_char], Llamado [nombreObjeto=round], Llamado [nombreObjeto=round], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=substr], Llamado [nombreObjeto=raise_application_error]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=ge_pact_parc, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=sf_pins_error, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pacont_egre_cm, body=Body [llamados=[Llamado [nombreObjeto=numerar_comp], Llamado [nombreObjeto=dbms_output.put_line], Llamado [nombreObjeto=SQLERRM]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pact_sal_cpto, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pact_mov_res_cpto, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=te_pact_mov_res_cla, body=Body [llamados=[Llamado [nombreObjeto=NVL], Llamado [nombreObjeto=NVL]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=SF_PSALDO_SIAF, body=Body [llamados=[Llamado [nombreObjeto=SF_QPLAN.SALDO], Llamado [nombreObjeto=SF_QPLAN.SALDOCANJE], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=SF_QPLAN.SALDODISP], Llamado [nombreObjeto=nvl]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=SF_PVALOR_PART, body=Body [llamados=[Llamado [nombreObjeto=RAISE_APPLICATION_ERROR], Llamado [nombreObjeto=nvl], Llamado [nombreObjeto=nvl]]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=Pp_PAct_Sald_Valm, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Procedimiento [nombre=IN_CTOC_ACT_FECHA_TERMINACION, body=Body [llamados=[]
+cadenas=null]]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

@@ -1,17 +1,18 @@
 package org.plsql.main;
 
 import java.io.IOException;
+import java.io.StringReader;
+import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.antlr.runtime.ANTLRFileStream;
+import org.antlr.runtime.ANTLRReaderStream;
 import org.antlr.runtime.CharStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
-import org.antlr.runtime.debug.DebugEventListener;
-import org.antlr.runtime.debug.DebugTokenStream;
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
+import org.parser.db.DBObjects;
 import org.parser.entidades.Body;
 import org.parser.entidades.Declaracion;
 import org.parser.entidades.Llamado;
@@ -19,6 +20,7 @@ import org.parser.entidades.Parametro;
 import org.parser.entidades.Procedimiento;
 import org.plsql.PLSQLTreeLexer;
 import org.plsql.PLSQLTreeParser;
+import org.plsql.PLSQLTreeParser.package_body_return;
 
 public class MainTree {
 
@@ -27,30 +29,52 @@ public class MainTree {
 	 * @throws IOException
 	 * @throws RecognitionException
 	 */
-	@SuppressWarnings({ "rawtypes", "unused" })
-	public static void main(String[] args) throws IOException, RecognitionException {
-		String file = "/home/ojcchar1/Documents/workspaces-eclipse/pruebastesis/PruebaParser/procedimientos/Anula_Documento.sql";
-		CharStream cs = new ANTLRFileStream(file);
+	public static void main(String[] args) throws Exception {
+
+		String paquete="PI_QSIMU";
+		String codigo = DBObjects.getInstance().obtenerCodigoPackageBody(paquete);
+		
+		CharStream cs = new ANTLRReaderStream(new StringReader(codigo));
 
 		PLSQLTreeLexer lexer = new PLSQLTreeLexer(cs);
 
 		CommonTokenStream tokens = new CommonTokenStream();
 		tokens.setTokenSource(lexer);
 
-		DebugEventListener dbg = null;
-		DebugTokenStream tokendbg = new DebugTokenStream(tokens, dbg);
-
 		PLSQLTreeParser parser = new PLSQLTreeParser(tokens);
-		org.plsql.PLSQLTreeParser.procedure_definition_return procedimiento = parser.procedure_definition();
-		CommonTree arbol = (CommonTree) procedimiento.getTree();
-
-		List list = arbol.getChildren();
-
-//		printTree(arbol, 1);
-		Procedimiento proc = construirProcedimiento(arbol);
+		package_body_return packageBody = parser.package_body();
 		
-		System.out.println(proc);
+		CommonTree arbol = (CommonTree) packageBody.getTree();
 
+		 printTree(arbol, 1);
+	//	pintarProcedimientos();
+
+	}
+
+	private static void pintarProcedimientos() throws SQLException, ClassNotFoundException, IOException, RecognitionException {
+		List<String> procedimientos = DBObjects.getInstance().obtenerProcedimientosFunciones();
+
+		for (String pro : procedimientos) {
+
+			String codigo = DBObjects.getInstance().obtenerCodigoProcedimiento(pro);
+
+			CharStream cs = new ANTLRReaderStream(new StringReader(codigo));
+
+			PLSQLTreeLexer lexer = new PLSQLTreeLexer(cs);
+
+			CommonTokenStream tokens = new CommonTokenStream();
+			tokens.setTokenSource(lexer);
+
+			PLSQLTreeParser parser = new PLSQLTreeParser(tokens);
+			org.plsql.PLSQLTreeParser.procedure_definition_return procedimiento = parser.procedure_definition();
+			CommonTree arbol = (CommonTree) procedimiento.getTree();
+
+			// printTree(arbol, 1);
+			Procedimiento proc = construirProcedimiento(arbol);
+
+			System.out.println(proc);
+			System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
+		}
 	}
 
 	private static Procedimiento construirProcedimiento(CommonTree arbol) {
@@ -70,17 +94,14 @@ public class MainTree {
 		proc.setNombre(nombre);
 		proc.setParametros(parametros);
 
-		
 		return proc;
 	}
 
 	private static List<Parametro> obtenerParametrosProc(CommonTree arbol) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	private static Declaracion obtenerDeclaracionProc(CommonTree arbol) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -102,32 +123,33 @@ public class MainTree {
 
 		List<Llamado> llamados = obtenerLlamadosBody(cuerpo);
 		body.setLlamados(llamados);
-		
-		List<String> cadenas=obtenerCadenasBody(cuerpo);
-		body.setCadenas(cadenas);
+
+		// List<String> cadenas = obtenerCadenasBody(cuerpo);
+		// body.setCadenas(cadenas);
 
 		return body;
 	}
 
+	@SuppressWarnings("unused")
 	private static List<String> obtenerCadenasBody(Tree arbol) {
 		List<String> cadenas = new LinkedList<String>();
 
 		if (arbol == null) {
 			return cadenas;
 		}
-		
+
 		for (int i = 0; i < arbol.getChildCount(); i++) {
 			Tree hijo = arbol.getChild(i);
 
 			if (hijo.getType() == PLSQLTreeLexer.STRING) {
 				cadenas.add(hijo.getChild(0).getText().replaceAll("'", ""));
-			}else{
+			} else {
 				List<String> cads = obtenerCadenasBody(hijo);
 				cadenas.addAll(cads);
 			}
-				
+
 		}
-		
+
 		return cadenas;
 	}
 

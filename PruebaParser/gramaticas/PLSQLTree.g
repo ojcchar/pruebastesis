@@ -628,6 +628,13 @@ create_package_body :
         SEMI
     ;
 
+package_body :
+        PACKAGE BODY ( schema_name=ID DOT )? package_name=ID
+        ( IS | AS ) ( declare_section )?
+        ( initialize_section=body | END ( package_name2=ID )? )
+        SEMI
+    ;
+
 create_procedure :
         CREATE ( OR kREPLACE )? PROCEDURE ( schema_name=ID DOT )? procedure_name=ID
         ( LPAREN parameter_declaration ( COMMA parameter_declaration )* RPAREN )?
